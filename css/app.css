@@ -1,0 +1,222 @@
+/* --------------------------------------------------------
+Freelancer Starter Kit template HTML5 and Flexbox
+version: 1.0
+author: Autonio Nicasio
+email: antonio.nicasio.herrera@gmail.com
+website: http://pandeishon-neishon.com
+description: 100% flexbox responsive HTML5 template
+----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i&display=swap');
+
+:root {
+  --dark-purple: #080f5b;
+  --purple: #0d19a3;
+  --green-aqua: #15db92;
+  --sand: #f4e4c1;
+  --gold-ligth: #e4c580;
+  --white: #ffffff;
+  --white-gray: #dddddd;
+  --ligth-gray: #eeeeee;
+  --pearl-white: #f5f5f5;
+}
+
+/* Utilities */
+
+.container {
+  background-color: var(--pearl-white);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(224, 224, 224, 1);
+  box-shadow: 5px 5px 5px 1px rgba(224, 224, 224, 1);
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Global */
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+}
+
+input:not([type="submit"]) {
+  background-color: var(--white-gray);
+  border: 1px solid var(--ligth-gray);
+  display: block;
+  height: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+
+
+/* Header */
+.site-header {
+  background-color: var(--dark-purple);
+}
+
+.site-header nav {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header nav a {
+  color: var(--white);
+  font-size: 2.2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+.hero {
+  height: 65rem;
+  background-image: url(../img/header/bg1.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.hero::after {
+  background-color: rgba(0, 0, 0, .8);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.hero-container {
+  color: var(--white);
+  max-width: 70rem;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-container h2 {
+  color: var(--white);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: justify;
+
+}
+
+.hero-inner {
+  height: 25rem;
+  background-image: url(../img/header/bg1.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.hero-inner::after {
+  background-color: rgba(0, 0, 0, .8);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.button {
+  background-color: var(--green-aqua);
+  border: 1px solid var(--green-aqua);
+  color: var(--white);
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1rem 5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  margin: 3rem auto;
+}
+
+.container-services {
+  text-align: center;
+}
+
+/* Contact */
+
+.contact-container {
+  margin-bottom: 2rem;
+}
+
+.site-footer {
+  background-color: var(--dark-purple);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-footer {
+  padding: 3rem 0;
+  flex: 0 0 calc(33.3% - 1rem);
+}
+
+.container-footer p {
+  color: var(--green-aqua);
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .site-header nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-header nav a {
+    margin-bottom: 0;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  .container-services {
+    display: flex;
+  }
+
+  .services {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+
+}

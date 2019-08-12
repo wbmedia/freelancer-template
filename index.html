@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Freelancer - Flexbox Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Freelancer - Flexbox Template</title>
+
+  <!--CSS Libraries-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/71cf908ce5.js"></script>
 </head>
+
 <body>
-    
+  <header class="site-header">
+    <nav>
+      <a href="/">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contcat</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-container">
+      <h1>Software and Web Development</h1>
+      <h2>Hello my name is <strong>Antonio Nicasio</strong> I am a <strong> Web and Software Developer</strong>,
+        nowadays I work with technologies or tools such as Javascript, CSS, PHP, as well as Frameworks such as ReactJS,
+        VueJS, Node, GraphQL among others, I am currently learning Python since it is a very powerful tool or language
+        that should not be lacking in my knowledge. If you want to know more about me, do not hesitate to contact me
+      </h2>
+      <p>Tijuana, Mexico</p>
+      <a class="button" href="#">contact me</a>
+    </div>
+  </div>
+
+  <main id="services" class="services container">
+    <h2 class="text-center">My Services</h2>
+
+    <div class="container-services">
+      <div class="services">
+        <h3 class="text-center">Web Development</h3>
+        <div class="icons">
+          <img width="250" src="./img/svg/undraw_web_developer_p3e5.svg" alt="Software Development">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt in minus! Earum soluta similique,
+          quia autem, incidunt fuga eos ullam qui sunt provident vitae, dolorum officia nobis magnam facilis?</p>
+      </div>
+
+      <div class="services">
+        <h3>Software Development</h3>
+        <div class="icons">
+          <img width="284" src="./img/svg/undraw_design_sprint_x3eb.svg" alt="Software Development">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt in minus! Earum soluta similique,
+          quia autem, incidunt fuga eos ullam qui sunt provident vitae, dolorum officia nobis magnam facilis?</p>
+      </div>
+
+      <div class="services">
+        <h3>UI Development</h3>
+        <div class="icons">
+          <img width="274" src="./img/svg//undraw_website_setup_5hr2.svg" alt="Software Development">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt in minus! Earum soluta similique,
+          quia autem, incidunt fuga eos ullam qui sunt provident vitae, dolorum officia nobis magnam facilis?</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="contact" class="container">
+    <div class="contact contact-container ">
+      <h2>Contact</h2>
+      <form action="">
+
+        <label for="email">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <button class="button" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer section">
+    <div class="container-footer site-header">
+
+      <nav>
+        <a href="https://www.linkedin.com/in/antonionicasio/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/wbmedia" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://medium.com/@webmediadigital" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=526647809933" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </nav>
+      <p class="copyright">Antonio Nicasio 2019 © - All Rights Reserved</p>
+    </div>
+  </footer>
+
+
 </body>
+
 </html>
